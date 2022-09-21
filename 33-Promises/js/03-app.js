@@ -8,9 +8,9 @@ const aplicarDescuento = new Promise((resolve, reject) => {
 	}
 });
 
-aplicarDescuento
+aplicarDescuento //promises
 	.then((resultado) => {
-		console.log(resultado);
+		descuento(resultado);
 	})
 	.catch((error) => console.log(error));
 
@@ -18,3 +18,7 @@ aplicarDescuento
 //fulfilled = el promise se cumplio
 //rejected = el promise no se cumplio
 //pending = aun no se cumplio el promise ni fue rechazado
+
+function descuento(mensaje) {
+	console.log(mensaje);
+}
